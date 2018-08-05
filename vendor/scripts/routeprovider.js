@@ -14,12 +14,12 @@ angular.module('portfolioApp', ['ngSanitize', 'ngRoute'])
 }])
 .controller('MainCtrl', ['$route', '$routeParams', '$location',
   function MainCtrl($route, $routeParams, $location) {
-	this.name = "test";
-    this.$route = $route;
-    this.$location = $location;
-    this.$routeParams = $routeParams;
+	$scope.name = "test";
+	$scope.$route = $route;
+	$scope.$location = $location;
+	$scope.$routeParams = $routeParams;
 }])
 .controller('ProjectCtrl', ['$routeParams', function BookCtrl($routeParams) {
-  this.title = 'ProjectCtrl';
-  this.params = $routeParams;
+    $scope.title = 'ProjectCtrl';
+    $scope.params = $routeParams;
 }])
