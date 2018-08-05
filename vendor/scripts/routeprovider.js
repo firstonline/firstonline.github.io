@@ -12,7 +12,7 @@ angular.module('portfolioApp', ['ngSanitize', 'ngRoute'])
         templateUrl: 'project2.html',
       });
 
-    $locationProvider.html5Mode(true);
+    $locationProvider.html5Mode(false);
 }])
 .controller('MainCtrl', ['$route', '$routeParams', '$location',
   function MainCtrl($route, $routeParams, $location) {
