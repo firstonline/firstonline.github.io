@@ -13,13 +13,13 @@ angular.module('portfolioApp', ['ngSanitize', 'ngRoute'])
     $locationProvider.html5Mode(false);
 }])
 .controller('MainCtrl', ['$route', '$routeParams', '$location',
-  function MainCtrl($route, $routeParams, $location) {
+  function MainCtrl($scope, $route, $routeParams, $location) {
 	$scope.name = "test";
 	$scope.$route = $route;
 	$scope.$location = $location;
 	$scope.$routeParams = $routeParams;
 }])
-.controller('ProjectCtrl', ['$routeParams', function BookCtrl($routeParams) {
+.controller('ProjectCtrl', ['$routeParams', function BookCtrl($scope, $routeParams) {
     $scope.title = 'ProjectCtrl';
     $scope.params = $routeParams;
 }])
