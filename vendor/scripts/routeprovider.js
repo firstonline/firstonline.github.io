@@ -5,7 +5,7 @@ angular.module('portfolioApp', ['ngSanitize', 'ngRoute'])
 		.when("/", {
 			templateUrl : "portfolioPage.html"
 		})
-      .when('/project1', {
+      .when('/#!/project1', {
         templateUrl: 'project1.html',
       })
       .when('/project2', {
