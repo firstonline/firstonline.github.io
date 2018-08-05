@@ -11,6 +11,8 @@ angular.module('portfolioApp', ['ngSanitize', 'ngRoute'])
       .when('/project2', {
         templateUrl: 'project2.html',
       });
+
+    $locationProvider.html5Mode(true);
 }])
 .controller('MainCtrl', ['$route', '$routeParams', '$location',
   function MainCtrl($route, $routeParams, $location) {
