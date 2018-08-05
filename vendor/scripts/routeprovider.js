@@ -5,15 +5,11 @@ angular.module('portfolioApp', ['ngSanitize', 'ngRoute'])
 		.when("/", {
 			templateUrl : "portfolioPage.html"
 		})
-      .when('/Book/:bookId', {
-        templateUrl: 'book.html',
-        controller: 'BookCtrl',
-        controllerAs: 'book'
+      .when('/project1', {
+        templateUrl: 'project1.html',
       })
-      .when('/Book/:bookId/ch/:chapterId', {
-        templateUrl: 'chapter.html',
-        controller: 'ChapterCtrl',
-        controllerAs: 'chapter'
+      .when('/project2', {
+        templateUrl: 'project2.html',
       });
 
     $locationProvider.html5Mode(true);
