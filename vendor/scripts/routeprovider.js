@@ -14,6 +14,7 @@ angular.module('portfolioApp', ['ngSanitize', 'ngRoute'])
 }])
 .controller('MainCtrl', ['$route', '$routeParams', '$location',
   function MainCtrl($route, $routeParams, $location) {
+	this.name = "test";
     this.$route = $route;
     this.$location = $location;
     this.$routeParams = $routeParams;
